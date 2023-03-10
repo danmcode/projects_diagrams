@@ -1,26 +1,32 @@
-<mxfile host="app.diagrams.net" modified="2023-02-25T19:51:14.404Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.50" etag="gyglgnxcet44UImSSU9i" version="20.8.23" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-10T04:50:33.960Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="SzUagyK42FvXHLJORk3U" version="21.0.6" type="github">
   <diagram name="MER" id="A2fAMGsQMXvIKnF8qpCU">
-    <mxGraphModel dx="1050" dy="573" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="989" dy="543" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="OX5ZEf51lm33wvpcWz9B-1" value="Users" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="140" y="170" width="180" height="180" as="geometry" />
+        <mxCell id="OX5ZEf51lm33wvpcWz9B-1" value=" users" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+          <mxGeometry x="70" y="165" width="180" height="185" as="geometry" />
         </mxCell>
-        <mxCell id="OX5ZEf51lm33wvpcWz9B-2" value="+Attribute1&#xa;+Attribute2&#xa;+Attribute3" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Nunito;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNunito;" vertex="1" parent="OX5ZEf51lm33wvpcWz9B-1">
-          <mxGeometry y="30" width="180" height="150" as="geometry" />
+        <mxCell id="OX5ZEf51lm33wvpcWz9B-2" value="id: bigint(20) UN AI PK&#xa;user_name: varchar(50)&#xa;name: varchar(50)&#xa;last_name: varchar(50)&#xa;email: varchar(255)&#xa;password: varchar(255)&#xa;remember_token: varchar(100)&#xa;created_at: timestamp&#xa;updated_at: timestamp&#xa;created_by: user_id&#xa;&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Nunito;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNunito;" parent="OX5ZEf51lm33wvpcWz9B-1" vertex="1">
+          <mxGeometry y="30" width="180" height="155" as="geometry" />
         </mxCell>
-        <mxCell id="OX5ZEf51lm33wvpcWz9B-8" value="Sellers" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="350" y="170" width="180" height="180" as="geometry" />
+        <mxCell id="OX5ZEf51lm33wvpcWz9B-8" value="seller" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+          <mxGeometry x="350" y="150" width="200" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="OX5ZEf51lm33wvpcWz9B-9" value="+Attribute1&#xa;+Attribute2&#xa;+Attribute3" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Nunito;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNunito;" vertex="1" parent="OX5ZEf51lm33wvpcWz9B-8">
-          <mxGeometry y="30" width="180" height="150" as="geometry" />
+        <mxCell id="OX5ZEf51lm33wvpcWz9B-9" value="id: bigint(20) UN AI PK&#xa;updated_by: bigint(20) UN AI FK&#xa;user_id : bigint(20) UN AI FK" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Nunito;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNunito;" parent="OX5ZEf51lm33wvpcWz9B-8" vertex="1">
+          <mxGeometry y="30" width="200" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="OX5ZEf51lm33wvpcWz9B-10" value="Tickets" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+        <mxCell id="OX5ZEf51lm33wvpcWz9B-10" value="Tickets" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
           <mxGeometry x="350" y="390" width="180" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="OX5ZEf51lm33wvpcWz9B-11" value="+Attribute1&#xa;+Attribute2&#xa;+Attribute3" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Nunito;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNunito;" vertex="1" parent="OX5ZEf51lm33wvpcWz9B-10">
+        <mxCell id="OX5ZEf51lm33wvpcWz9B-11" value="+Attribute1&#xa;+Attribute2&#xa;+Attribute3" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Nunito;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNunito;" parent="OX5ZEf51lm33wvpcWz9B-10" vertex="1">
           <mxGeometry y="30" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="G5X43IpxlXC4tEhYC3Bp-1" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;entryX=0.009;entryY=0.593;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="OX5ZEf51lm33wvpcWz9B-9">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="250" y="265" as="sourcePoint" />
+            <mxPoint x="350" y="165" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
