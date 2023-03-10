@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-10T05:38:51.036Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="pyjpjbadJy8z3VgMk8Sk" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-10T05:39:59.976Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="gjgvlKKtrUxolFa_DAa3" version="21.0.6" type="github">
   <diagram name="MER" id="A2fAMGsQMXvIKnF8qpCU">
-    <mxGraphModel dx="989" dy="1643" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1195" dy="1757" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -96,8 +96,11 @@
         <mxCell id="G5X43IpxlXC4tEhYC3Bp-40" value="id: bigint(20) UN AI PK&#xa;name: varchar(50)&#xa;last_name: varchar(50)&#xa;email: varchar(255) &#xa;ticket_sold: bigint(20) FK&#xa;seller_id: bigint(20) FK&#xa;sold_ by: bogint(20) FK&#xa;created_at: timestamp&#xa;updated_at: timestamp&#xa;created_by: bigint(20) FK" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Nunito;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNunito;" vertex="1" parent="G5X43IpxlXC4tEhYC3Bp-39">
           <mxGeometry y="30" width="200" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="G5X43IpxlXC4tEhYC3Bp-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G5X43IpxlXC4tEhYC3Bp-40" target="G5X43IpxlXC4tEhYC3Bp-23">
+        <mxCell id="G5X43IpxlXC4tEhYC3Bp-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=ERmandOne;startFill=0;endArrow=ERmany;endFill=0;" edge="1" parent="1" source="G5X43IpxlXC4tEhYC3Bp-40" target="G5X43IpxlXC4tEhYC3Bp-23">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G5X43IpxlXC4tEhYC3Bp-43" value="Can Have" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;fontFamily=Nunito;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNunito;" vertex="1" parent="1">
+          <mxGeometry x="720" y="-180" width="80" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
