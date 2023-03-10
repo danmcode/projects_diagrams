@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-10T05:19:38.185Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="z-Jur-pMlvxK_pZjCIoU" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-10T05:38:51.036Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="pyjpjbadJy8z3VgMk8Sk" version="21.0.6" type="github">
   <diagram name="MER" id="A2fAMGsQMXvIKnF8qpCU">
     <mxGraphModel dx="989" dy="1643" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -64,13 +64,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="G5X43IpxlXC4tEhYC3Bp-23" value="ticket_sold" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="620" y="-60" width="200" height="130" as="geometry" />
+          <mxGeometry x="620" y="-90" width="200" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="G5X43IpxlXC4tEhYC3Bp-24" value="id: bigint(20) UN AI PK&#xa;ticket_sold: bigint FK&#xa;sold_ by: bogint(20) FK&#xa;created_at: timestamp&#xa;updated_at: timestamp&#xa;created_by: bigint(20) FK" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Nunito;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNunito;" vertex="1" parent="G5X43IpxlXC4tEhYC3Bp-23">
-          <mxGeometry y="30" width="200" height="100" as="geometry" />
+        <mxCell id="G5X43IpxlXC4tEhYC3Bp-24" value="id: bigint(20) UN AI PK&#xa;ticket_sold: bigint FK&#xa;sold_ by: bigint(20) FK&#xa;sold_to: bigint(20) FK&#xa;sold_at: timestamp&#xa;created_at: timestamp&#xa;updated_at: timestamp&#xa;created_by: bigint(20) FK" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Nunito;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNunito;" vertex="1" parent="G5X43IpxlXC4tEhYC3Bp-23">
+          <mxGeometry y="30" width="200" height="130" as="geometry" />
         </mxCell>
         <mxCell id="G5X43IpxlXC4tEhYC3Bp-29" value="is" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;fontFamily=Nunito;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNunito;" vertex="1" parent="1">
-          <mxGeometry x="730" y="110" width="50" height="30" as="geometry" />
+          <mxGeometry x="720" y="110" width="50" height="30" as="geometry" />
         </mxCell>
         <mxCell id="G5X43IpxlXC4tEhYC3Bp-30" value="roles" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
           <mxGeometry x="60" y="-170" width="200" height="110" as="geometry" />
@@ -88,6 +88,15 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="G5X43IpxlXC4tEhYC3Bp-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERmandOne;endFill=0;startArrow=ERmany;startFill=0;" edge="1" parent="1" source="G5X43IpxlXC4tEhYC3Bp-36" target="OX5ZEf51lm33wvpcWz9B-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G5X43IpxlXC4tEhYC3Bp-39" value="customer" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="400" y="-320" width="200" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="G5X43IpxlXC4tEhYC3Bp-40" value="id: bigint(20) UN AI PK&#xa;name: varchar(50)&#xa;last_name: varchar(50)&#xa;email: varchar(255) &#xa;ticket_sold: bigint(20) FK&#xa;seller_id: bigint(20) FK&#xa;sold_ by: bogint(20) FK&#xa;created_at: timestamp&#xa;updated_at: timestamp&#xa;created_by: bigint(20) FK" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Nunito;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNunito;" vertex="1" parent="G5X43IpxlXC4tEhYC3Bp-39">
+          <mxGeometry y="30" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="G5X43IpxlXC4tEhYC3Bp-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G5X43IpxlXC4tEhYC3Bp-40" target="G5X43IpxlXC4tEhYC3Bp-23">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
