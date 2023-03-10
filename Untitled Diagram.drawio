@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-10T05:39:59.976Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="gjgvlKKtrUxolFa_DAa3" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-10T05:40:41.333Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="zrYuZElK9KFAetYsbiK_" version="21.0.6" type="github">
   <diagram name="MER" id="A2fAMGsQMXvIKnF8qpCU">
     <mxGraphModel dx="1195" dy="1757" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -26,10 +26,10 @@
           <mxGeometry x="290" y="110" width="50" height="30" as="geometry" />
         </mxCell>
         <mxCell id="G5X43IpxlXC4tEhYC3Bp-9" value="ticket" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="610" y="180" width="200" height="110" as="geometry" />
+          <mxGeometry x="610" y="180" width="200" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="G5X43IpxlXC4tEhYC3Bp-10" value="id: bigint(20): UN AI PK&#xa;loterry_number: varchar(4) UN &#xa;created_at: timestamp&#xa;updated_at: timestamp&#xa;created_by: bigint(20) FK" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Nunito;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNunito;" vertex="1" parent="G5X43IpxlXC4tEhYC3Bp-9">
-          <mxGeometry y="30" width="200" height="80" as="geometry" />
+        <mxCell id="G5X43IpxlXC4tEhYC3Bp-10" value="id: bigint(20): UN AI PK&#xa;loterry_number: varchar(4) UN&#xa;is_store_ticket: boolean &#xa;created_at: timestamp&#xa;updated_at: timestamp&#xa;created_by: bigint(20) FK" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Nunito;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNunito;" vertex="1" parent="G5X43IpxlXC4tEhYC3Bp-9">
+          <mxGeometry y="30" width="200" height="110" as="geometry" />
         </mxCell>
         <mxCell id="G5X43IpxlXC4tEhYC3Bp-13" value="has" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;fontFamily=Nunito;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNunito;" vertex="1" parent="1">
           <mxGeometry x="160" y="120" width="50" height="30" as="geometry" />
