@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-10T05:40:41.333Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="zrYuZElK9KFAetYsbiK_" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-11T00:06:59.639Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="lwwcKwQpHTr-WHrj3Fvs" version="21.0.6" type="github">
   <diagram name="MER" id="A2fAMGsQMXvIKnF8qpCU">
-    <mxGraphModel dx="1195" dy="1757" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1105" dy="1703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -11,10 +11,10 @@
           <mxGeometry y="30" width="180" height="155" as="geometry" />
         </mxCell>
         <mxCell id="OX5ZEf51lm33wvpcWz9B-8" value="seller" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
-          <mxGeometry x="330" y="-40" width="200" height="120" as="geometry" />
+          <mxGeometry x="330" y="-90" width="200" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="OX5ZEf51lm33wvpcWz9B-9" value="id: bigint(20) UN AI PK&#xa;updated_by: bigint(20) UN AI FK&#xa;is_seller: boolean&#xa;is_store_seller: boolean&#xa;user_id : bigint(20) FK" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Nunito;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNunito;" parent="OX5ZEf51lm33wvpcWz9B-8" vertex="1">
-          <mxGeometry y="30" width="200" height="90" as="geometry" />
+        <mxCell id="OX5ZEf51lm33wvpcWz9B-9" value="id: bigint(20) UN AI PK&#xa;updated_by: bigint(20) UN AI FK&#xa;is_seller: boolean&#xa;is_store_seller: boolean&#xa;is_active:boolean&#xa;diasable_at: timestamp&#xa;disable_by: bigint(20) FK&#xa;user_id : bigint(20) FK&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Nunito;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNunito;" parent="OX5ZEf51lm33wvpcWz9B-8" vertex="1">
+          <mxGeometry y="30" width="200" height="140" as="geometry" />
         </mxCell>
         <mxCell id="G5X43IpxlXC4tEhYC3Bp-1" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1.013;exitY=0.097;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="OX5ZEf51lm33wvpcWz9B-2" target="OX5ZEf51lm33wvpcWz9B-9">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
